@@ -3,7 +3,7 @@
 '''
 PySCF doesn't have its own input parser.  The input file is a Python program.
 
-Before going throught the rest part, be sure the PySCF path is added in PYTHONPATH.
+Before going through the rest part, be sure the PySCF path is added in PYTHONPATH.
 '''
 
 import pyscf
