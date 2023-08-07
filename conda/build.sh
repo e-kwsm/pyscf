@@ -2,7 +2,7 @@
 # and the -e makes it exit whenever a command in the script returns nonzero exit status.
 set -x -e
 
-# # Skip buliding libxc, libxcfun to speed up compiling
+# # Skip building libxc, libxcfun to speed up compiling
 # export CMAKE_CONFIGURE_ARGS="-DWITH_F12=OFF -DBUILD_LIBXC=OFF -DBUILD_XCFUN=OFF"
 # wget http://www.sunqm.net/pyscf/files/bin/pyscf-2.0a-deps-openblas.tar.gz
 # tar -C pyscf/lib -xzf pyscf-2.0a-deps-openblas.tar.gz
