@@ -251,7 +251,7 @@ PySCF 2.2.0 (2023-03-09)
   - PBC integral accuracy of 2D system for insufficient integral grids
   - Update Libxc to Libxc-6
   - get_monkhorst_pack_size for numerical noise
-  - Unit recognization unified
+  - Unit recognition unified
 * Fixed
   - MCSCF without initializing SCF
   - Memory leaks in C kernels for CCSD(T)
@@ -310,13 +310,13 @@ PySCF 2.1.0 (2022-09-01)
   - Lattice sum ranges in PBC AO-value evaluation
   - Various cutoffs in PBC integrals for exceptional cells
   - Handles 1e system for KS methods
-  - Try to use original axes when creating Mole object if pointgroup is inputed
+  - Try to use original axes when creating Mole object if pointgroup is inputted
   - More symmetry information of MCSCF active space dumped
   - SA-CASSCF nuc grad API reform
   - Upgrade cint library to v5
   - Accelerating SGX module
   - rsdf, gdf, aft, mdf, ft_ao, rsjk modules refactored and their performance are optimized
-  - The return status of HF statbility checks
+  - The return status of HF stability checks
   - GDF 3-index integral tensor loader to support tensor sliced from disk
 * Fixed
   - Dynamic level shift for UHF
@@ -349,7 +349,7 @@ PySCF 2.0.0 (2021-11-01)
   - Natural Orbitals for DFCASCI and DFCASSCF with approximate CI solvers
   - slow and fast QCISD and QCISD(T) for restricted refs
 * Improved
-  - Pacakge layout, static checks, and code releasement pipeline.
+  - Package layout, static checks, and code releasement pipeline.
     Certain features were removed from core modules, including: cornell_shci,
     dftd3, dmrgscf, doci, fciqmcscf, icmpspt, mbd, Molpro2Pyscf, mpicc, nao,
     semiempirical, shciscf, tblis, prop/efg, prop/esr, prop/freq, prop/gtensor,
@@ -403,7 +403,7 @@ PySCF 1.7.6 (2021-03-28)
   - Basis parser to support arithmetic expressions in basis data
   - dmrgci interface refactored
   - MP2 gradients performance
-  - Interface of polariazable embedding with integral batching
+  - Interface of polarizable embedding with integral batching
   - Electron-phonon Hamiltonian module refactored
   - Remove memorization of Ewald parameters.
   - molden dumper refactored
@@ -754,7 +754,7 @@ PySCF 1.6 alpha (2018-08-15)
 * Improved
   - numint performance (eval_rho, eval_mat)
   - Energy cutoff estimation
-  - CCSD convergency for 2D-PBC AFTDF, GDF and MDF methods
+  - CCSD convergence for 2D-PBC AFTDF, GDF and MDF methods
   - Integral transformation performance in GW
 
 
@@ -1330,7 +1330,7 @@ PySCF 1.2 alpha (2016-8-5)
 --------------------------
 * Added
   - MDF (mixed density fitting) method for molecule and PBC 2-election integrals
-  - GAMESS WFN wirter
+  - GAMESS WFN writer
   - Periodic boundary condition (PBC) for gamma point RHF, UHF, RKS, UKS
   - PBC RHF, UHF, RKS, UKS with k-point sampling
   - PBC AO integrals
@@ -1365,7 +1365,7 @@ Version 1.1 beta (2016-4-11):
   - Mole object serialization with json
   - Orbital energy output format for ROHF
 * Bugfix
-  - meta-lowdin orthogonalization for high angular memontum basis
+  - meta-lowdin orthogonalization for high angular momentum basis
   - Orbital occupancy for ROHF with symmetry
   - CASSCF initializing from x2c-UHF
   - ECP accuracy
