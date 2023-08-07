@@ -209,7 +209,7 @@ mo = dmet_cas(mc, mf.make_rdm1(), idx3d)
 mc.fcisolver.wfnsym = 'B1g'
 mc.kernel(mo)
 mo = mc.mo_coeff
-#mc.analzye()
+#mc.analyze()
 e_t = mc.e_tot  # -2244.88920313881
 cas_t = mc.mo_coeff[:,mc.ncore:mc.ncore+mc.ncas]
 
@@ -221,7 +221,7 @@ ept2_t = mrpt.NEVPT(mc).kernel()
 print('E(T) = %.15g  E(Q) = %.15g  gap = %.15g' % (e_t, e_q, e_t-e_q))
 # E(T) = -2244.88920313881  E(Q) = -2244.90267106288  gap = 0.0134679240700279
 
-# The triplet and quintet active space are not perfectly overlaped
+# The triplet and quintet active space are not perfectly overlapped
 s = reduce(numpy.dot, (cas_t.T, mol.intor('cint1e_ovlp_sph'), cas_q))
 print('Active space overlpa <T|Q> ~ %f' % numpy.linalg.det(s))
 
