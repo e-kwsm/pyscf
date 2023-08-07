@@ -166,7 +166,7 @@ jobs:
           conda config --set anaconda_upload yes
           conda build --output-folder . conda
 
-  # Disable macos conda release for Error during compling:
+  # Disable macos conda release for Error during compiling:
   # MACOSX_DEPLOYMENT_TARGET mismatch: now "10.9" but "10.15" during configure
   #release-conda-macos:
   #  runs-on: macos-latest

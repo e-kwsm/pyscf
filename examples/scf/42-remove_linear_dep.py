@@ -20,7 +20,7 @@ mol = gto.M(atom=['H 0 0 %f'%i for i in range(10)], unit='Bohr',
             basis='ccpvtz')
 
 #
-# A regular SCF calculation for this sytem will raise a warning message
+# A regular SCF calculation for this system will raise a warning message
 #
 # Warn: Singularity detected in overlap matrix (condition number = 5.47e+09). SCF may be inaccurate and hard to converge.
 #
@@ -48,7 +48,7 @@ print(numpy.linalg.eigh(s)[0][:8])
 
 def eig(h, s):
     d, t = numpy.linalg.eigh(s)
-    # Removing the eigenvectors assoicated to the smallest eigenvalue.
+    # Removing the eigenvectors associated to the smallest eigenvalue.
     x = t[:,d>1e-7] / numpy.sqrt(d[d>1e-7])
     xhx = reduce(numpy.dot, (x.T, h, x))
     e, c = numpy.linalg.eigh(xhx)

@@ -225,7 +225,7 @@ mc = mcscf.approx_hessian(mcscf.CASSCF(mf, 11, 8))
 fci.addons.fix_spin_(mc.fcisolver, ss=2)
 mc.fcisolver.wfnsym = 'B1g'
 mc.kernel(mo)
-#mc.analzye()
+#mc.analyze()
 e_t = mc.e_tot  # -2244.81493852189
 cas_t = mc.mo_coeff[:,mc.ncore:mc.ncore+mc.ncas]
 
@@ -234,7 +234,7 @@ cas_t = mc.mo_coeff[:,mc.ncore:mc.ncore+mc.ncas]
 print('E(T) = %.15g  E(Q) = %.15g  gap = %.15g' % (e_t, e_q, e_t-e_q))
 # E(T) = -2244.81493852189  E(Q) = -2244.82910509839  gap = 0.0141665764999743
 
-# The triplet and quintet active space are not perfectly overlaped
+# The triplet and quintet active space are not perfectly overlapped
 s = reduce(numpy.dot, (cas_t.T, mol.intor('cint1e_ovlp_sph'), cas_q))
 print('Active space overlpa <T|Q> ~ %f' % numpy.linalg.det(s)) # 0.307691
 
